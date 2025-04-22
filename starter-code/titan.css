@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Outfit:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(assets/destination/background-destination-desktop.jpg);
+    color: #ffff;
+  font-family: "Roboto Condensed", sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+hr{
+    width: 600px;
+    height: 0px;
+    z-index: 200;
+}
+header img{
+    width: 40px;
+    height: 40px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    background-color:( 0, 0, 0, 0.4);
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    width: 1000px;
+    height: 40px;
+    text-align: center;
+    justify-content: end;
+    gap: 60px;
+    margin-top: 20px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    color: white;
+}
+nav a:after{
+    content:'';
+    bottom: 0;
+    left: 30%;
+    position: absolute;
+    width:0;
+    height: 2px;
+    background: white;
+    transition: width 2s;    
+}
+nav a:hover::after{
+    width: 8%;
+}
+.des::after{
+    content:'';
+    bottom: 0;
+    left: 48%;
+    position: absolute;
+    width:0;
+    height: 2px;
+    background: white;
+    transition: width 2s;  
+}
+.des :hover:after{
+    width: 120px;
+}
+.crew::after{
+    content:'';
+    bottom: 0;
+    left: 67%;
+    position: absolute;
+    width:0;
+    height: 2px;
+    background: white;
+    transition: width 1s;  
+}
+.crew:hover::after{
+    width: 55px;
+}
+.tech::after{
+    content:'';
+    bottom: 0;
+    left: 83%;
+    position: absolute;
+    width:0;
+    height: 2px;
+    background: white;
+    transition: width 1s;  
+}
+.tech:hover::after{
+    width: 100px;
+}
+.all{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 50px;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.all .image h3{
+    display: flex;
+    gap: 15px;
+}
+h3 span{
+    color: #9b9b9b;
+}
+.mo{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 100px;
+}
+.mo span{
+    font-size: 80px;
+
+}
+.mo h1{
+    font-family: serif;
+}
+.navbar{
+    display: flex;
+    gap: 30px;
+    margin-top: 70px;
+}
+.navbar a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.mo hr{
+    width: 400px;
+    margin-right: 20px;
+}
+.avg{
+    display: flex;
+    gap: 100px;
+}
